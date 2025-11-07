@@ -1,0 +1,16 @@
+/*CADASTRO */
+body {
+    margin: 0;
+    background-color: #0D1321;
+    font-family: 'Sora', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos-side{
+    width: 75px;
+}
+.login-box {
+    color: white
+}
