@@ -8,9 +8,60 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.center-box {
+    background: #BDEDFF;
+    padding: 45px 55px;
+    border-radius: 14px;
+    text-align: center;
+    width: 360px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
 .logos-side{
     width: 75px;
 }
+
 .login-box {
-    color: white
+    color: black
+}
+
+.input-field {
+    font-family: 'Sora', sans-serif;
+    width: 90%;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #BDEDFF;
+    border: 1px solid #7D7D7D;
+    font-size: 14px;
+    color: black ;
+}
+
+.userType{
+    font-family: 'Sora', sans-serif;
+    width: 30%;
+    margin-top: 25px;
+    background: linear-gradient(90deg, #0D1321 0%, #053B8A 100%);
+    color: white;
+    background-color: #053B8A;
+    border-radius: 5px;
+}
+
+.signupBtn{
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    margin-top: 5px;
+    padding: 14px;
+    background: linear-gradient(90deg, #0D1321 0%, #053B8A 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.signup-text{
+    margin-top: 15px;
 }
