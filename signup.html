@@ -5,68 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadastro - ConectaBus</title>
 
-    <!-- Fonte Sora -->
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/cadastro.css" />
+  <link rel="stylesheet" href="styles/cadastro.css">
 
-  <!-- Importa o script como módulo e com defer -->
   <script type="module" src="js/signup.js" defer></script>
 </head>
 
 <body>
+
 <div class="container">
   <div class="center-box">
-    
-    <!-- LOGO -->
-    <div class="logo-side">
-      <img src="assets/Logo ConectaBus (1).svg" alt="Logo ConectaBus" class="logo" />
-    </div>
 
-    <!-- FORMULÁRIO DE CADASTRO -->
-    <div class="login-side">
-      <div class="login-box">
-        <p class="title">Bem-vindo ao <strong>ConectaBus</strong></p>
-        <p class="subtitle">Crie sua conta</p>
+    <img src="assets/Logo ConectaBus (1).svg" alt="Logo ConectaBus" class="logo-img">
 
-        <input type="name" placeholder="Nome completo:" class="input-field" /><br />
-        <input type="email" placeholder="E-mail:" class="input-field" /><br />
-        <input type="password" placeholder="Senha:" class="input-field" /><br />
+    <p class="title">Bem-vindo ao <strong>ConectaBus</strong></p>
+    <p class="subtitle">Crie sua conta</p>
 
-        <label class="userTitle">Tipo de usuário:</label>
-        <select class="userType">
-          <option value="Estudante">Estudante</option>
-          <option value="Governo">Governo</option>
-          <option value="Cidadão">Cidadão</option>
-        </select><br /><br />
+    <!-- IDs RESTAURADOS -->
+    <input id="name" type="text" placeholder="Nome completo:" class="input-field">
+    <input id="email" type="email" placeholder="E-mail:" class="input-field">
+    <input id="password" type="password" placeholder="Senha:" class="input-field">
 
-        <button class="signupBtn">Cadastrar</button>
+    <label class="userTitle">Tipo de usuário:</label>
+    <select id="userType" class="input-field">
+      <option value="Estudante">Estudante</option>
+      <option value="Governo">Governo</option>
+      <option value="Cidadão">Cidadão</option>
+    </select>
 
-        <p class="signup-text">
-          Já tem uma conta? 
-          <a href="index.html"><b>Entrar</b></a>
-        </p>
-      </div>
-    </div>
+    <button id="signupBtn" class="btn">Cadastrar</button>
+
+    <p class="signup-text">
+      Já tem uma conta? <a href="index.html"><b>Entrar</b></a>
+    </p>
 
   </div>
 </div>
 
-
-  <!-- POPUP QR CODE -->
-  <div id="qr-popup" class="mfa-popup" style="display:none;">
-    <div class="mfa-popup-content">
-      <h3>📱 Cadastro realizado com sucesso!</h3>
-      <p>Escaneie este QR Code no Microsoft Authenticator.</p>
-      <img id="qrPopupImg" style="width: 160px; margin: 15px 0" />
-      <br />
-      <button
-        id="closeQRBtn"
-        style="background:#0a6624;color:white;padding:10px 18px;border:none;border-radius:10px;cursor:pointer;"
-      >
-        Fechar
-      </button>
-    </div>
+<!-- POPUP QR CODE -->
+<div id="qr-popup" class="mfa-popup" style="display:none;">
+  <div class="mfa-popup-content">
+    <h3>📱 Cadastro realizado com sucesso!</h3>
+    <p>Escaneie este QR Code no Microsoft Authenticator.</p>
+    <img id="qrPopupImg" style="width: 160px; margin: 15px 0" />
+    <button id="closeQRBtn" style="background:#0a6624;color:white;padding:10px 18px;border:none;border-radius:10px;cursor:pointer;">
+      Fechar
+    </button>
   </div>
+</div>
+
 </body>
 </html>
