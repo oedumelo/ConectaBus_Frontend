@@ -170,3 +170,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("verifyMfaBtn")?.addEventListener("click", verifyMfa);
   document.getElementById("closeMfaBtn")?.addEventListener("click", closeMfaPopup);
 });
+
+const tokenInput = document.getElementById("token");
+
+tokenInput.addEventListener("input", () => {
+    tokenInput.placeholder = tokenInput.value.length > 0 ? "" : "Código MFA";
+});
