@@ -17,7 +17,7 @@
         <option value="1">014 - Brasília / Conde da Boa Vista</option>
         <option value="2">032 - Setúbal / Conde da Boa Vista</option>
         <option value="3">101 - Circular Conde da Boa Vista / Joana Bezerra</option>
-        <option value="4">061 - Piedade / Conde da Boa Vista</option>
+        <option value="4">061 - Piedade / Conde da Boa Vista</option>        
       </select>
       
       
@@ -40,6 +40,7 @@
         </label>
         <i id="moonIcon" class="fas fa-moon theme-icon"></i>
       </div>
+      <button onclick="logout()" class="logout-btn">Deslogar</button>
     </div>
   </header>
 
@@ -82,5 +83,15 @@
   </footer>
 
   <script src="js/dashboard.js"></script>
+  <script>
+  function logout() {
+    // Limpa dados de sessão
+    sessionStorage.clear();
+    localStorage.clear();
+
+    // Redireciona para a página de login
+    window.location.href = "index.html";
+  }
+</script>
 </body>
 </html>
